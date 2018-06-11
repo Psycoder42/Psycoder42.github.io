@@ -1,0 +1,194 @@
+html {
+  padding: 0;
+  background-color: #444444;
+}
+
+.button {
+  border-radius: 4px;
+  display: inline-block;
+  background-color: #FFFFEE;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-radius: 1px solid #444444;
+  background-color: #00FF00;
+  transition-duration: .5s;
+}
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+.action-button {
+  display: block;
+  margin: 5px 0;
+  width: 7em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.visual {
+  color: lightgreen;
+  background-color: black;
+  padding: 10px;
+  border: 3px;
+  margin: 5px;
+  border-style: ridge;
+  display: inline-block;
+  text-align: center;
+}
+
+.tool-list {
+  border: 3px;
+  border-style: groove;
+  padding: 5px;
+  background-color: #111111;
+  height: 525px;
+  margin: 10px auto;
+}
+
+.inv-item {
+  cursor: pointer;
+  border: 1px solid #111111;
+}
+
+.inv-item:hover {
+  border: 1px solid #7777FF;
+}
+
+.shop-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.shop-item {
+  display: inline-block;
+  padding: inherit 15px;
+  border: 1px solid #111111;
+}
+
+.shop-info {
+  flex-grow: 1;
+  padding 5px;
+  text-align: left;
+  display: inline-block;
+}
+
+.shop-text {
+  margin: 10px 5px;
+  display: block;
+}
+
+.shop-button {
+  color: black;
+  padding: 5px;
+  margin: 5px;
+  width: 5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.timestamp {
+  color: lightblue;
+  font-weight: bold;
+}
+
+.user-state {
+  color: white;
+  font-style: italic;
+}
+
+.user-action {
+  color: white;
+}
+
+.game-info {
+  color: lightgreen;
+  font-style: italic;
+}
+
+.game-over {
+  color: lightpink;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+}
+
+.cash {
+  color: gold;
+  font-weight: bold;
+}
+
+.using {
+  border: 1px solid orange;
+}
+
+#screen {
+  width: 1000px;
+  height: 820px;
+  margin: 0 auto;
+}
+
+#visuals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#inventory {
+  width: 200px;
+}
+
+#owned {
+  width: 100px;
+}
+
+#shop {
+  flex-grow: 1;
+}
+
+#console {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#actions {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+}
+
+#restart {
+  margin-top: 3em;
+}
+
+#gamelog {
+  display: inline-block;
+  background-color: #000000;
+  border: 3px;
+  border-style: ridge;
+  overflow-y: scroll;
+  flex-grow: 1;
+  line-height: 1.2em;
+  height: 10rem;
+  margin: 5px;
+  padding: 5px;
+}

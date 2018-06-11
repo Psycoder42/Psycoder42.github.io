@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Green</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="screen" class="wrapper">
+      <div id="visuals" class="wrapper">
+        <div id="inventory" class="visual">
+          <span class="title">Tools You Own (Click to use):</span>
+          <div id="owned" class="tool-list"></div>
+          <div id="wallet">You currently have <span id="bank" class="cash">$0</span>.</div>
+        </div>
+        <div id="shop" class="visual">
+          <span class="title">Free Market Capitalism:</span>
+          <div id="tools" class="tool-list"></div>
+          <div>*For most goods, resale value is halved once they are used.</div>
+        </div>
+      </div>
+      <div id="console" class="wrapper">
+        <div id="gamelog"></div>
+        <div id="actions" class="wrapper">
+          <div id="mow" class="button action-button">Mow A Lawn</div>
+          <div id="relax" class="button action-button">Take Vacation</div>
+          <div id="restart" class="button action-button">Restart</div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="greengame.js"></script>
+  </body>
+</html>

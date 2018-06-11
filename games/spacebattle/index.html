@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Space Battle</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="strings.js"></script>
+  </head>
+  <body>
+    <div class="battle-area">
+      <div id="player-realm" class="ship-space">
+        <h1>Defending Force</h1>
+      </div>
+      <div id="alien-realm" class="ship-space">
+        <h1>Attacking Force</h1>
+        <p class="armada">Remaining Attackers: <span id="att-count">0</span></p>
+        <div class="ship">
+          <img id="cur-alien" data-type="Alien" src="images/blank.png">
+        </div>
+      </div>
+    </div>
+    <div class="game-io">
+      <div id="console"></div>
+      <div id="controls">
+        <button type="button" id="fight" class="button">Engage Enemy</button>
+        <button type="button" id="reset" class="button">Restart Game</button>
+        <button type="button" id="reconfig" class="button">Change Settings</button>
+      </div>
+    </div>
+    <div id="popup-parent">
+      <div id="settings" class="popup">
+        <h2>Game Settings</h2>
+        <p>
+          <label>Choose Dificulty: </label>
+          <select id="difficulty">
+            <option value="Training Pilot" selected>Training Pilot</option>
+            <option value="Plucky Go-Getter">Plucky Go-Getter</option>
+            <option value="Flying Ace">Flying Ace</option>
+          </select>
+        </p>
+        <p>
+          <label>Player1 Name: </label>
+          <input type="text" id="p1-name" placeholder="Required">
+        </p>
+        <p>
+          <label>Player2 Name: </label>
+          <input type="text" id="p2-name" placeholder="Optional">
+        </p>
+        <button type="button" id="start" class="button">Start Game</button>
+      </div>
+      <div id="shop" class="popup">
+        <h2>Enhancements Shop</h2>
+        <div id="shop-list" class="shop-upgrades"></div>
+        <button type="button" id="close-shop" class="button">Close</button>
+      </div>
+      <div id="more-info" class="popup">
+        <button type="button" id="close-info" class="button">Close</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="spacebattle.js"></script>
+  </body>
+</html>
