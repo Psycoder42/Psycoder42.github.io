@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="css/style.css">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="js/colorpicker.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <form>
+          <fieldset>
+            <legend>Canvas size:</legend>
+            <label>Width: </label><input type="text" id="width" name="width" value="50"><br>
+            <label>Height: </label><input type="text" id="height" name="height" value="40"><br>
+            <button id="reset">RESET</button>
+          </fieldset>
+          <fieldset>
+            <legend>Color Palette Generation Parameters:</legend>
+            <label>R1: </label><input type="text" id="R1" name="R1" value="256">
+            <label>R2: </label><input type="text" id="R2" name="R2" value="0"><br>
+            <label>G1: </label><input type="text" id="G1" name="G1" value="256">
+            <label>G2: </label><input type="text" id="G2" name="G2" value="0"><br>
+            <label>B1: </label><input type="text" id="B1" name="B1" value="256">
+            <label>B2: </label><input type="text" id="B2" name="B2" value="0"><br>
+            <button id="generate">GENERATE</button>
+          </fieldset>
+        </form>
+        <div id="color-palette"></div>
+      </div>
+      <div id="canvas"></div>
+    </div>
+  </body>
+</html>
